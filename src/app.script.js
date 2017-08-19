@@ -1,2 +1,9 @@
+import Vue from 'vue'
+import App from './assets/components/app.vue'
+
 require('./app.style.scss')
-require('./assets/images/img_fjords.jpg')
+
+new Vue({
+    el: '#app',
+    render: h => h(App)
+})

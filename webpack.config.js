@@ -37,6 +37,13 @@ module.exports = {
                     loader: 'sass-loader'
                 }]
             })
+        }, {
+            test: /\.js$/,
+            loader: 'babel-loader',
+            exclude: /node_modules/
+        }, {
+            test: /\.vue$/,
+            loader: 'vue-loader'
         }]
     },
     plugins: [
@@ -46,7 +53,14 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             title: 'Mindaugas Dangveckis',
-            filename: path.resolve(__dirname, 'index.html')
+            filename: path.resolve(__dirname, 'index.html'),
+            template: './index.html',
+            minify: false
         })
-    ]
+    ],
+    resolve: {
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        }
+    }
 };
