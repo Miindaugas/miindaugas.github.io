@@ -1,3 +1,3 @@
 GitHub Pages simple profile page.
 
-[Demo Page](http://miindaugas.github.com)
+[Demo Page](https://miindaugas.github.io)
