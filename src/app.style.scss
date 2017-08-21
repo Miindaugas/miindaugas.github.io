@@ -55,7 +55,7 @@ small {
   font-size: 14px;
   color: $accent-color;
   padding: 6px 14px;
-  margin-bottom: 5px;
+  margin: 0 5px 5px 0;
   border: solid 1px #ddd;
   border-radius: 4px;
   -webkit-transition-duration: 200ms;
@@ -85,7 +85,6 @@ small {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-
   }
 }
 

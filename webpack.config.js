@@ -1,6 +1,8 @@
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractStylePlugin = require("extract-text-webpack-plugin");
+const ExtractStylePlugin = require('extract-text-webpack-plugin');
+const HtmlReplaceWebpackPlugin = require('html-replace-webpack-plugin');
 
 const publicDirectory = 'dist';
 const absolutePath = path.resolve(__dirname, publicDirectory);
