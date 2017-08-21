@@ -10555,6 +10555,117 @@ module.exports = function normalizeComponent (
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
     name: 'App'
@@ -10566,11 +10677,177 @@ module.exports = function normalizeComponent (
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "app"
-  }, [_vm._v("\n    This is simple page\n")])
-}
-var staticRenderFns = []
+  }, [_c('div', {
+    staticClass: "container"
+  }, [_c('div', {
+    staticClass: "header"
+  }, [_c('div', {
+    staticClass: "column"
+  }, [_c('img', {
+    staticClass: "profile__picture",
+    attrs: {
+      "src": "http://graph.facebook.com/100000129340380/picture?width=100&height=100",
+      "alt": "Facebook Mindaugas Dangveckis Photo"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "column"
+  }, [_c('h1', [_vm._v("Mindaugas Dangveckis")]), _vm._v(" "), _c('h5', [_vm._v("Laravel / Applications Developer")])])]), _vm._v(" "), _c('div', {
+    staticClass: "columns"
+  }, [_c('div', {
+    staticClass: "block"
+  }, [_c('div', {
+    staticClass: "column title"
+  }, [_c('strong', [_vm._v("CONTACT")])]), _vm._v(" "), _c('div', {
+    staticClass: "column"
+  }, [_c('a', {
+    staticClass: "btn",
+    attrs: {
+      "target": "_blank",
+      "href": "mailto:m.dangveckis@gmail.com"
+    }
+  }, [_vm._v("Email")]), _vm._v(" "), _c('a', {
+    staticClass: "btn",
+    attrs: {
+      "target": "_blank",
+      "href": "https://github.com/Miindaugas"
+    }
+  }, [_vm._v("GitHub")]), _vm._v(" "), _c('a', {
+    staticClass: "btn",
+    attrs: {
+      "target": "_blank",
+      "href": "https://www.facebook.com/mindaugas.dangveckis"
+    }
+  }, [_vm._v("Facebook")])])]), _vm._v(" "), _c('div', {
+    staticClass: "block"
+  }, [_c('div', {
+    staticClass: "column title"
+  }, [_c('strong', [_vm._v("OVERVIEW")])]), _vm._v(" "), _c('div', {
+    staticClass: "column"
+  }, [_c('p', [_vm._v("Experienced "), _c('b', [_vm._v("Mid Level Developer")]), _vm._v(" with a demonstrated history of working in the information technology and services industry.")])])]), _vm._v(" "), _c('div', {
+    staticClass: "block"
+  }, [_c('div', {
+    staticClass: "column title"
+  }, [_c('strong', [_vm._v("EXPERIENCE")])]), _vm._v(" "), _c('div', {
+    staticClass: "column"
+  }, [_c('div', {
+    staticClass: "item"
+  }, [_c('div', {
+    staticClass: "subtitle"
+  }, [_c('b', [_vm._v("Freelance Developer,")]), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "http://upwork.com"
+    }
+  }, [_vm._v("Upwork")])]), _vm._v(" "), _c('small', [_vm._v("January 2017 - Present")]), _vm._v(" "), _c('p', [_vm._v("Scripts & Utilities.")])]), _vm._v(" "), _c('div', {
+    staticClass: "item"
+  }, [_c('div', {
+    staticClass: "subtitle"
+  }, [_c('b', [_vm._v("Web / iOS Developer,")]), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "http://cpartner.lt"
+    }
+  }, [_vm._v("Creative Partner")])]), _vm._v(" "), _c('small', [_vm._v("January 2015 - September 2017")]), _vm._v(" "), _c('p', [_vm._v("Working with IT projects, Mobile Applications development.")])]), _vm._v(" "), _c('div', {
+    staticClass: "item"
+  }, [_c('div', {
+    staticClass: "subtitle"
+  }, [_c('b', [_vm._v("IT technician,")]), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "http://kvk.lt"
+    }
+  }, [_vm._v("Klaipėda State University of Applied Science")])]), _vm._v(" "), _c('small', [_vm._v("August 2013 - July 2014")]), _vm._v(" "), _c('p', [_vm._v("Computer and other hardware fault detection, repair, and maintenance.")])]), _vm._v(" "), _c('div', {
+    staticClass: "item"
+  }, [_c('div', {
+    staticClass: "subtitle"
+  }, [_c('b', [_vm._v("Web Developer,")]), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "http://amburia.com"
+    }
+  }, [_vm._v("Amburia Branding")])]), _vm._v(" "), _c('small', [_vm._v("February 2012 - December 2014")]), _vm._v(" "), _c('p', [_vm._v("Various IT solutions programming, mostly for web."), _c('br'), _vm._v("(HTML / CSS / PHP / JS / MYSQL / Flash AS3 / etc.)")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "block"
+  }, [_c('div', {
+    staticClass: "column title"
+  }, [_c('strong', [_vm._v("PROJECTS")])]), _vm._v(" "), _c('div', {
+    staticClass: "column"
+  }, [_c('div', {
+    staticClass: "item"
+  }, [_c('div', {
+    staticClass: "subtitle"
+  }, [_c('b', [_vm._v("Skydiving Booking System, ")]), _c('a', {
+    attrs: {
+      "target": "_blank",
+      "href": "https://rezervacijos.skydiving.lt"
+    }
+  }, [_vm._v("Website")])]), _vm._v(" "), _c('p', [_vm._v("Booking system with allows you to set time frame for available reservations. Implemented Google Calendar with syncs reservations between calendar application and website and allows you to manage them through calendar.")])]), _vm._v(" "), _c('div', {
+    staticClass: "item"
+  }, [_c('div', {
+    staticClass: "subtitle"
+  }, [_c('b', [_vm._v("SMK Timetable, ")]), _c('a', {
+    attrs: {
+      "target": "_blank",
+      "href": "http://tvarkarasciai.smk.lt"
+    }
+  }, [_vm._v("Website")]), _vm._v(", "), _c('a', {
+    attrs: {
+      "target": "_blank",
+      "href": "https://itunes.apple.com/lt/app/smk-life/id1037746080?mt=8"
+    }
+  }, [_vm._v("iOS")]), _vm._v(", "), _c('a', {
+    attrs: {
+      "target": "_blank",
+      "href": "https://play.google.com/store/apps/details?id=lt.cpartner.smktimetable&hl=en"
+    }
+  }, [_vm._v("Android")])]), _vm._v(" "), _c('p', [_vm._v("Web based system with allow to manage school schedule, has custom time grid, teacher list, subjects, and lots more requested functionality.")])]), _vm._v(" "), _c('div', {
+    staticClass: "item"
+  }, [_c('div', {
+    staticClass: "subtitle"
+  }, [_c('b', [_vm._v("Akumai.lt, ")]), _c('a', {
+    attrs: {
+      "target": "_blank",
+      "href": "http://akumai.lt"
+    }
+  }, [_vm._v("Website")])]), _vm._v(" "), _c('p', [_vm._v("API Service for akumai.lt with suggest battery for your car. Batteries import, database, algorithms, and admin panel to manage data.")])]), _vm._v(" "), _c('div', {
+    staticClass: "item"
+  }, [_c('div', {
+    staticClass: "subtitle"
+  }, [_c('b', [_vm._v("Klaipėdos Universitetas, ")]), _c('a', {
+    attrs: {
+      "target": "_blank",
+      "href": "https://itunes.apple.com/st/app/klaip%C4%97dos-universitetas/id1110002893?mt=8"
+    }
+  }, [_vm._v("iOS")])]), _vm._v(" "), _c('p', [_vm._v("Application for Klaipėda University with presents university news with includes audio and photo files.")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "block"
+  }, [_c('div', {
+    staticClass: "column title"
+  }, [_c('strong', [_vm._v("EDUCATION")])]), _vm._v(" "), _c('div', {
+    staticClass: "column"
+  }, [_c('div', {
+    staticClass: "item"
+  }, [_c('div', {
+    staticClass: "subtitle"
+  }, [_c('b', [_vm._v("Klaipeda State University of Applied Sciences")])]), _vm._v(" "), _c('small', [_vm._v("September 2012 - June 2015")]), _vm._v(" "), _c('p', [_vm._v("Informatics")])]), _vm._v(" "), _c('div', {
+    staticClass: "item"
+  }, [_c('div', {
+    staticClass: "subtitle"
+  }, [_c('b', [_vm._v("Klaipėdos \"Aukuro\" High School")])]), _vm._v(" "), _c('small', [_vm._v("September 2000 - June 2012")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "block"
+  }, [_c('div', {
+    staticClass: "column title"
+  }, [_c('strong', [_vm._v("SKILLS")])]), _vm._v(" "), _c('div', {
+    staticClass: "column"
+  }, [_c('div', {
+    staticClass: "item"
+  }, [_c('div', {
+    staticClass: "subtitle"
+  }, [_c('b', [_vm._v("Proficient")])]), _vm._v(" "), _c('p', [_vm._v("Swift iOS, Laravel, PHP, MySQL, JavaScript, Angular, Vue.js, Webpack, Gulp, Git.")])]), _vm._v(" "), _c('div', {
+    staticClass: "item"
+  }, [_c('div', {
+    staticClass: "subtitle"
+  }, [_c('b', [_vm._v("Familiar")])]), _vm._v(" "), _c('p', [_vm._v("Electron, Flash AS3, Firebase, Node.js, Java, Android, Kotlin.")])])])])])])])
+}]
 render._withStripped = true
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);

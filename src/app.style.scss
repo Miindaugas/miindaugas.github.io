@@ -1,3 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro:300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+$background-color: #f9f9f9;
+$primary-color: #4fb683;
+$accent-color: #000;
+
 body {
-  background: #f3f3f3;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-filter: blur(0.000001px);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $background-color;
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+}
+
+h5 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+  margin: 5px 0 12px 0;
+}
+
+b {
+  color: $accent-color;
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+small {
+  font-size: 12px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  color: $accent-color;
+  padding: 6px 14px;
+  margin-bottom: 5px;
+  border: solid 1px #ddd;
+  border-radius: 4px;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+
+  &:hover {
+    color: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+.header {
+  display: table;
+  padding: 10px;
+  margin-bottom: 30px;
+
+  h1, h5 {
+    margin: 5px 20px 0 20px;
+  }
+
+  .column {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .profile__picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+  }
+}
+
+.container {
+  margin: 60px auto;
+  width: 100%;
+  max-width: 650px;
+}
+
+.subtitle {
+  color: $accent-color;
+}
+
+.columns {
+  .block {
+    display: table;
+    width: 100%;
+  }
+  .column.title {
+    display: table-cell;
+    width: 25%;
+    color: $primary-color;
+    font-size: 14px;
+  }
+  .column {
+    display: table-cell;
+    width: 75%;
+    color: #373737;
+    padding: 10px;
+  }
+  .item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .columns {
+    .block {
+      display: block;
+      padding-bottom: 10px;
+    }
+    .column, .column.title {
+      display: block;
+      width: auto;
+      padding: 5px 10px;
+    }
+  }
 }
