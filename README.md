@@ -1,1 +1,1 @@
-GitHub Pages Profile Page
+GitHub Pages Simple Profile Page
