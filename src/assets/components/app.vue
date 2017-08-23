@@ -90,10 +90,9 @@
                 profile: {
                     name: 'Mindaugas Dangveckis',
                     role: 'Laravel / Applications Developer',
-                    picture: 'http://graph.facebook.com/100000129340380/picture?width=100&height=100'
+                    picture: 'https://graph.facebook.com/100000129340380/picture?width=100&height=100'
                 },
                 contact: {
-                    Email : 'mailto:m.dangveckis@gmail.com?Subject=Hello',
                     GitHub: 'https://github.com/Miindaugas',
                     Facebook: 'https://www.facebook.com/mindaugas.dangveckis'
                 },
