@@ -205,7 +205,7 @@
                     }
                 ],
                 skills: {
-                    proficient: ['Swift iOS', 'Laravel', 'PHP', 'MySQL', 'JavaScript', 'Angular', 'Vue.js', 'Webpack', 'Gulp', 'Git.'],
+                    proficient: ['Swift iOS', 'Laravel', 'PHP', 'MySQL', 'JavaScript', 'Angular', 'Vue.js', 'Webpack', 'Gulp', 'Git'],
                     familiar: ['Electron', 'Flash AS3', 'Firebase', 'Node.js', 'Java', 'Android', 'Kotlin']
                 }
             }
