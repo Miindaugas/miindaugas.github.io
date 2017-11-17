@@ -116,7 +116,7 @@
                         links: [
                             {
                                 name: 'Creative Partner',
-                                url: 'http://cpartner.com'
+                                url: 'http://cpartner.lt'
                             }
                         ]
                     },
@@ -138,7 +138,7 @@
                         links: [
                             {
                                 name: 'Amburia Branding',
-                                url: 'http://kvk.lt'
+                                url: '#'
                             }
                         ]
                     }
