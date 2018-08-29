@@ -1,103 +1,119 @@
 <template>
-    <div class="app">
-        <div class="container">
-            <div class="header">
-                <div class="column">
-                    <img class="profile__picture" :src="profile.picture" alt="Profile Picture">
-                </div>
-                <div class="column">
-                    <h1 v-html="profile.name"></h1>
-                    <h5 v-html="profile.role"></h5>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="block">
-                    <div class="column title">
-                        <strong>CONTACT</strong>
-                    </div>
-                    <div class="column">
-                        <a v-for="(value, key) in contact" target="_blank" :href="value" class="btn">{{ key }}</a>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="column title">
-                        <strong>OVERVIEW</strong>
-                    </div>
-                    <div class="column">
-                        <p v-html="about"></p>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="column title">
-                        <strong>EXPERIENCE</strong>
-                    </div>
-                    <div class="column">
-                        <div class="item" v-for="place in experience">
-                            <div class="subtitle"><b>{{ place.job }}</b> <a v-for="resource in place.links" target="_blank" :href="resource.url">{{ resource.name }}</a></div>
-                            <small>{{ place.period }}</small>
-                            <p>{{ place.description }}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="column title">
-                        <strong>PROJECTS</strong>
-                    </div>
-                    <div class="column">
-                        <div class="item" v-for="project in projects">
-                            <div class="subtitle"><b>{{ project.name }}, </b><a v-for="resource in project.links" target="_blank" :href="resource.url">{{ resource.name }} </a></div>
-                            <p v-html="project.description"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="column title">
-                        <strong>EDUCATION</strong>
-                    </div>
-                    <div class="column">
-                        <div class="item" v-for="value in education">
-                            <div class="subtitle"><b v-html="value.name"></b></div>
-                            <small v-html="value.period"></small>
-                            <p v-html="value.subject"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="column title">
-                        <strong>SKILLS</strong>
-                    </div>
-                    <div class="column">
-                        <div class="item">
-                            <div class="subtitle"><b>Proficient</b></div>
-                            <p v-html="renderList(skills.proficient)"></p>
-                        </div>
-                        <div class="item">
-                            <div class="subtitle"><b>Familiar</b></div>
-                            <p v-html="renderList(skills.familiar)"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="app">
+    <div class="container">
+      <div class="header">
+        <div class="column">
+          <img class="profile__picture" :src="profile.picture" alt="Profile Picture">
         </div>
+        <div class="column">
+          <h1 v-html="profile.name"></h1>
+          <h5 v-html="profile.role"></h5>
+          <h5>Currently <span v-if="!profile.looking">not</span> looking for job opportunities.</h5>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="block">
+          <div class="column title">
+            <strong>CONTACT</strong>
+          </div>
+          <div class="column">
+            <a v-for="(value, key) in contact" target="_blank" :href="value" class="btn">{{ key }}</a>
+          </div>
+        </div>
+        <div class="block">
+          <div class="column title">
+            <strong>OVERVIEW</strong>
+          </div>
+          <div class="column">
+            <p v-html="about"></p>
+          </div>
+        </div>
+        <div class="block">
+          <div class="column title">
+            <strong>EXPERIENCE</strong>
+          </div>
+          <div class="column">
+            <div class="item" v-for="place in experience">
+              <div class="subtitle">
+                <b>{{ place.job }}</b> - <a v-for="resource in place.links" :href="resource.url">{{ resource.name }}</a>
+              </div>
+              <small>{{ place.period }}</small>
+              <p>{{ place.description }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="column title">
+            <strong>PROJECTS</strong>
+          </div>
+          <div class="column">
+            <div class="item" v-for="project in projects">
+              <div class="subtitle"><b>{{ project.name }}, </b><a v-for="resource in project.links" target="_blank" :href="resource.url">{{ resource.name }} </a></div>
+              <p v-html="project.description"></p>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="column title">
+            <strong>EDUCATION</strong>
+          </div>
+          <div class="column">
+            <div class="item" v-for="value in education">
+              <div class="subtitle"><b v-html="value.name"></b></div>
+              <small v-html="value.period"></small>
+              <p v-html="value.subject"></p>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="column title">
+            <strong>SKILLS</strong>
+          </div>
+          <div class="column">
+            <div class="item">
+              <div class="subtitle"><b>Proficient</b></div>
+              <p v-html="renderList(skills.proficient)"></p>
+            </div>
+            <div class="item">
+              <div class="subtitle"><b>Familiar</b></div>
+              <p v-html="renderList(skills.familiar)"></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
     export default {
         name: 'App',
-        data: function() {
+        data: function () {
             return {
+                looking: false,
                 profile: {
                     name: 'Mindaugas Dangveckis',
-                    role: 'Laravel / Applications Developer',
+                    role: 'Web / Apps Developer',
                     picture: 'https://graph.facebook.com/100000129340380/picture?width=100&height=100'
                 },
                 contact: {
                     GitHub: 'https://github.com/Miindaugas',
-                    Facebook: 'https://www.facebook.com/mindaugas.dangveckis'
+                    Facebook: 'https://www.facebook.com/mindaugas.dangveckis',
+                    LinkedIn: 'https://www.linkedin.com/in/mindaugas-dangveckis'
                 },
                 about: 'Experienced <b>Mid Level Developer</b> with a demonstrated history of working in the information technology and services industry.',
                 experience: [
+                    {
+                        job: 'Web Developer',
+                        period: 'December 2017 - Present',
+                        description: 'Web Developer',
+                        links: [
+                            {
+                                name: 'EMR Express Inc',
+                                url: ''
+                            }
+                        ]
+                    },
                     {
                         job: 'Freelance Developer',
                         period: 'January 2017 - Present',
@@ -110,7 +126,7 @@
                         ]
                     },
                     {
-                        job: 'Web / iOS Developer',
+                        job: 'Web / iOS / Android Developer',
                         period: 'January 2015 - September 2017',
                         description: 'Working with IT projects, Mobile Applications development.',
                         links: [
@@ -205,7 +221,7 @@
                     }
                 ],
                 skills: {
-                    proficient: ['Swift iOS', 'Laravel', 'PHP', 'MySQL', 'JavaScript', 'Angular', 'Vue.js', 'Webpack', 'Gulp', 'Git'],
+                    proficient: ['React', 'Swift iOS', 'Laravel', 'PHP', 'MySQL', 'JavaScript', 'Angular', 'Vue.js', 'Webpack', 'Gulp', 'Git'],
                     familiar: ['Electron', 'Flash AS3', 'Firebase', 'Java', 'Android', 'Kotlin']
                 }
             }
