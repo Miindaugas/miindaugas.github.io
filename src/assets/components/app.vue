@@ -90,7 +90,7 @@
         name: 'App',
         data: function () {
             return {
-                looking: false,
+                looking: true,
                 profile: {
                     name: 'Mindaugas Dangveckis',
                     role: 'Web / Apps Developer',
@@ -105,12 +105,12 @@
                 experience: [
                     {
                         job: 'Web Developer',
-                        period: 'December 2017 - Present',
-                        description: 'Web Developer',
+                        period: 'December 2017 - March 2019',
+                        description: 'Front-End Single Page Web Devleopment (React / ES6)',
                         links: [
                             {
                                 name: 'EMR Express Inc',
-                                url: ''
+                                url: '#'
                             }
                         ]
                     },
@@ -221,8 +221,8 @@
                     }
                 ],
                 skills: {
-                    proficient: ['React', 'Swift iOS', 'Laravel', 'PHP', 'MySQL', 'JavaScript', 'Angular', 'Vue.js', 'Webpack', 'Gulp', 'Git'],
-                    familiar: ['Electron', 'Flash AS3', 'Firebase', 'Java', 'Android', 'Kotlin']
+                    proficient: ['React', 'ES6+', 'Swift iOS', 'Laravel', 'PHP', 'JavaScript', 'Angular', 'Vue.js', 'Webpack', 'Gulp', 'Git'],
+                    familiar: ['Electron', 'Node.js', 'Firebase', 'Java', 'Android', 'Kotlin']
                 }
             }
         },
