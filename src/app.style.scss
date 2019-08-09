@@ -61,7 +61,6 @@ small {
   color: $accent-color;
   padding: 6px 14px;
   margin: 0 5px 5px 0;
-  border: solid 1px #ddd;
   border-radius: 4px;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
@@ -95,10 +94,8 @@ small {
 
 .container {
   margin: 60px auto;
-  padding: 60px;
   width: 100%;
   max-width: 650px;
-  border: solid 2px #eee;
 }
 
 .subtitle {
