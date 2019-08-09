@@ -105,7 +105,7 @@
                 experience: [
                     {
                         job: 'Front-End Developer',
-                        period: 'April 2017 - Present',
+                        period: 'April 2019 - Present',
                         description: 'Front-End Development (Angular / ES6)',
                         links: [
                             {
