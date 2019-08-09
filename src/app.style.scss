@@ -1,9 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro:300);
+@import url(https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro:300,400);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
 
 $background-color: #f9f9f9;
-$primary-color: #4fb683;
+$primary-color: #ff6800;
 $accent-color: #000;
+$active: #d85900;
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -18,7 +19,7 @@ body {
 
 h1 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 26px;
 }
 
@@ -46,6 +47,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: $active;
+}
+
 small {
   font-size: 12px;
 }
@@ -62,8 +67,8 @@ small {
   transition-duration: 200ms;
 
   &:hover {
-    color: $primary-color;
-    border-color: $primary-color;
+    color: $active;
+    border-color: $active;
   }
 }
 
@@ -90,8 +95,10 @@ small {
 
 .container {
   margin: 60px auto;
+  padding: 60px;
   width: 100%;
   max-width: 650px;
+  border: solid 2px #eee;
 }
 
 .subtitle {

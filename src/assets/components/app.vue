@@ -8,7 +8,7 @@
         <div class="column">
           <h1 v-html="profile.name"></h1>
           <h5 v-html="profile.role"></h5>
-          <h5>Currently <span v-if="!profile.looking">not</span> looking for job opportunities.</h5>
+          <h5>Currently <span v-if="!profile.looking">not</span> looking for new job opportunities.</h5>
         </div>
       </div>
       <div class="columns">
@@ -93,20 +93,31 @@
                 looking: true,
                 profile: {
                     name: 'Mindaugas Dangveckis',
-                    role: 'Web / Apps Developer',
+                    role: 'Web Applications / Software Developer',
                     picture: 'https://graph.facebook.com/100000129340380/picture?width=100&height=100'
                 },
                 contact: {
+                    LinkedIn: 'https://www.linkedin.com/in/mindaugas-dangveckis',
                     GitHub: 'https://github.com/Miindaugas',
-                    Facebook: 'https://www.facebook.com/mindaugas.dangveckis',
-                    LinkedIn: 'https://www.linkedin.com/in/mindaugas-dangveckis'
+                    Facebook: 'https://www.facebook.com/mindaugas.dangveckis'
                 },
                 about: 'Experienced <b>Mid Level Developer</b> with a demonstrated history of working in the information technology and services industry.',
                 experience: [
                     {
-                        job: 'Web Developer',
+                        job: 'Front-End Developer',
+                        period: 'April 2017 - Present',
+                        description: 'Front-End Development (Angular / ES6)',
+                        links: [
+                            {
+                                name: 'Telesoftas',
+                                url: 'http://telesoftas.com'
+                            }
+                        ]
+                    },
+                    {
+                        job: 'Front-End Developer',
                         period: 'December 2017 - March 2019',
-                        description: 'Front-End Single Page Web Devleopment (React / ES6)',
+                        description: 'Front-End Development (React / ES6)',
                         links: [
                             {
                                 name: 'EMR Express Inc',
@@ -221,8 +232,8 @@
                     }
                 ],
                 skills: {
-                    proficient: ['React', 'ES6+', 'Swift iOS', 'Laravel', 'PHP', 'JavaScript', 'Angular', 'Vue.js', 'Webpack', 'Gulp', 'Git'],
-                    familiar: ['Electron', 'Node.js', 'Firebase', 'Java', 'Android', 'Kotlin']
+                    proficient: ['JavaScript', 'Angular', 'React', 'Laravel', 'Webpack', 'Git'],
+                    familiar: ['Electron', 'Node.js', 'Firebase', 'Java', 'Android', 'iOS', 'Kotlin', 'Swift', 'PHP', 'ES6']
                 }
             }
         },
