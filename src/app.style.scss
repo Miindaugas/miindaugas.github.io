@@ -2,9 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
 
 $background-color: #f9f9f9;
-$primary-color: #ff6800;
+$primary-color: #485de9;
 $accent-color: #000;
-$active: #d85900;
+$active: #2b87e9;
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -15,6 +15,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: $background-color;
+  background: url('/dist/assets/images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-shadow: 0 0 #000000;
 }
 
 h1 {
@@ -59,6 +63,7 @@ small {
   display: inline-block;
   font-size: 14px;
   color: $accent-color;
+  background: #f9f9f9;
   padding: 6px 14px;
   margin: 0 5px 5px 0;
   border-radius: 4px;
@@ -126,6 +131,9 @@ small {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    background: $background-color;
+  }
   .columns {
     .block {
       display: block;

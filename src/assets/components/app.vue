@@ -8,7 +8,7 @@
         <div class="column">
           <h1 v-html="profile.name"></h1>
           <h5 v-html="profile.role"></h5>
-          <h5>Currently <span v-if="!profile.looking">not</span> looking for new job opportunities.</h5>
+          <h5>Currently <span v-if="profile.looking === false">not</span> looking for new job opportunities.</h5>
         </div>
       </div>
       <div class="columns">
@@ -90,16 +90,15 @@
         name: 'App',
         data: function () {
             return {
-                looking: true,
+                looking: false,
                 profile: {
                     name: 'Mindaugas Dangveckis',
-                    role: 'Web Applications / Software Developer',
+                    role: 'Web Apps / Software Developer',
                     picture: 'https://graph.facebook.com/100000129340380/picture?width=100&height=100'
                 },
                 contact: {
                     LinkedIn: 'https://www.linkedin.com/in/mindaugas-dangveckis',
-                    GitHub: 'https://github.com/Miindaugas',
-                    Facebook: 'https://www.facebook.com/mindaugas.dangveckis'
+                    GitHub: 'https://github.com/Miindaugas'
                 },
                 about: 'Experienced <b>Mid Level Developer</b> with a demonstrated history of working in the information technology and services industry.',
                 experience: [
@@ -122,17 +121,6 @@
                             {
                                 name: 'EMR Express Inc',
                                 url: '#'
-                            }
-                        ]
-                    },
-                    {
-                        job: 'Freelance Developer',
-                        period: 'January 2017 - Present',
-                        description: 'Scripts & Utilities',
-                        links: [
-                            {
-                                name: 'Upwork',
-                                url: 'http://upwork.com'
                             }
                         ]
                     },
@@ -180,10 +168,6 @@
                                 url: 'http://tvarkarasciai.smk.lt'
                             },
                             {
-                                name: 'iOS',
-                                url: 'https://itunes.apple.com/lt/app/smk-life/id1037746080?mt=8'
-                            },
-                            {
                                 name: 'Android',
                                 url: 'https://play.google.com/store/apps/details?id=lt.cpartner.smktimetable&hl=en'
                             }
@@ -201,7 +185,7 @@
                     },
                     {
                         name: 'Akumai.lt',
-                        description: 'API Service for akumai.lt with suggest battery for your car. Batteries import, database, algorithms, and admin panel to manage data.',
+                        description: 'API Service for akumai.lt with suggest battery for your car. Batteries import, database, algorithms, admin panel to manage data.',
                         links: [
                             {
                                 name: 'Website',
@@ -232,8 +216,8 @@
                     }
                 ],
                 skills: {
-                    proficient: ['JavaScript', 'Angular', 'React', 'Laravel', 'Webpack', 'Git'],
-                    familiar: ['Electron', 'Node.js', 'Firebase', 'Java', 'Android', 'iOS', 'Kotlin', 'Swift', 'PHP', 'ES6']
+                    proficient: ['JavaScript', 'Node.js', 'ES6', 'Angular', 'React', 'Webpack', 'Git'],
+                    familiar: ['Java', 'Android', 'iOS', 'Kotlin', 'Swift', 'PHP']
                 }
             }
         },
